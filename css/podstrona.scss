@@ -1,0 +1,134 @@
+html{
+    height: 85%;
+}
+body{
+    font-family: sans-serif;
+    padding:0px;
+    margin:5%;
+    height: 100%;
+    background-image:url("../img/tlo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    margin-top:5%;
+    display:grid;
+    grid-template-areas: "nav" "main" "";
+    grid-template-columns: 1fr 4fr 0.5fr;
+    column-gap: 2%;
+    height:100%;
+}
+
+.nav{
+    border-radius:20px;
+    display:grid;
+    justify-items: center;
+    background-image: linear-gradient(grey,rgb(0, 88, 62));
+    height:80%;
+    -webkit-box-shadow: 24px 20px 32px -5px rgba(66, 68, 90, 0.58);
+    -moz-box-shadow: 24px 20px 32px -5px rgba(66, 68, 90, 0.58);
+    box-shadow: 24px 20px 32px -5px rgba(66, 68, 90, 0.58);
+    &__menu{
+        list-style-type: none;
+        text-align: center;
+        padding-right: 25%;
+
+        &__naglowek{
+            padding-left:15%;
+            font-size:140%;
+            color:white;
+            text-shadow: black 0.3em 0.3em 0.5em;
+        }
+        &__przekierowanie{
+            border:2px solid white;
+            padding:4%;
+            margin-top:10%;
+            margin-bottom:10%;
+            width:105%;
+            font-weight: 700;
+            border-radius: 10px;
+        }
+        &__przekierowanie:hover{
+            background-color: white;
+            color:black;
+            transition:0.5s;
+        }
+        &__link{
+            text-decoration: none;
+            outline:none;
+            color:white;
+            
+        }
+        &__link:hover{
+            background-color: white;
+            color:black;
+            transition: 0.5s;
+        }
+        &__active{
+            border:2px solid white;
+            padding:4%;
+            margin-top:10%;
+            margin-bottom:10%;
+            width:105%;
+            font-weight: 700;
+            border-radius: 10px;
+            text-decoration: none;
+            outline:none;
+            background-color:white;
+            color:black;
+        }
+    }
+}
+
+.main{
+background-color: white;
+background-image: linear-gradient(rgba(168, 168, 168, 0.9),rgba(80, 80, 80, 0.8));
+border-radius: 20px;
+}
+
+.header{
+    padding-top:1%;
+    text-align:center;
+    &__temat{
+        color:black;
+        font-size:250%;
+        font-style:italic;
+        
+    }
+    &__separate{
+        overflow: visible;
+        height: 30px;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px 0 0 0;
+        border-radius: 20px;
+        width:60%;
+    }
+    &__separate:before{
+        display: block;
+        content: "";
+        height: 30px;
+        margin-top: -31px;
+        border-style: solid;
+        border-color: black;
+        border-width: 0 0 1px 0;
+        border-radius: 20px;
+    }
+}
+
+.section{
+margin-left:5%;
+margin-right:5%;
+
+}
+
+.article{
+    &__pierwszezdjecie{
+        float:right;
+        margin-left:5px;
+        margin-bottom:5px;
+        border:2px solid black;
+    }
+}

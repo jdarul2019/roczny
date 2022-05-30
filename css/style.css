@@ -1,0 +1,93 @@
+html {
+  height: 95%;
+}
+
+body {
+  background-color: rgb(133, 133, 133);
+  margin: 1%;
+  padding: 0px;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/background.png");
+  border: 3px solid black;
+  margin: 1%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  color: white;
+  font-size: 150%;
+}
+.main__naglowek {
+  font-weight: 900;
+  font-style: italic;
+}
+
+.nav {
+  height: 100%;
+  background-color: rgb(133, 133, 133);
+  display: grid;
+  grid-template-areas: "pierwszy" "drugi" "trzeci" "czwarty" "piaty" "szosty" "siodmy" "osmy";
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(4, 25%);
+}
+.nav__pierwszy {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/norman.jpg");
+}
+.nav__drugi {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/religia.jpg");
+  background-position: top center;
+}
+.nav__trzeci {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/kultura.png");
+  background-position: left top;
+}
+.nav__czwarty {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/spol.png");
+  background-position: top center;
+}
+.nav__piaty {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/podroz.jpg");
+  background-position: left center;
+}
+.nav__szosty {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/krol.png");
+}
+.nav__siodmy {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/podboj.jpg");
+  background-position: center;
+}
+.nav__osmy {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/pop.png");
+}
+.nav div {
+  border: 2px black solid;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: black 0.3em 0.3em 0.5em;
+  color: white;
+  border-radius: 10px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+.nav div:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+  transition: 0.4s;
+  color: white;
+  font-size: 150%;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
