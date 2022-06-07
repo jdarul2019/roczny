@@ -9,6 +9,7 @@ body {
   margin: 5%;
   height: 80%;
   background-image: linear-gradient(rgba(0, 131, 70, 0.37),rgb(180, 180, 180),rgba(0, 131, 70, 0.37));
+  background-attachment:fixed;
 }
 
 .container {
